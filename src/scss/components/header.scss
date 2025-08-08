@@ -10,9 +10,9 @@
   background-size: auto;
 
   @include media(desktop) {
-    background: #fff;
     padding: 20px 0;
     background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-position: top center;
   }
 }
 
