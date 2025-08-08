@@ -1,5 +1,9 @@
 .cookie-banner-section {
-  background: #0b081f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/banner/banner-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
   width: 100%;
   max-width: 375px;
   padding: 40px 16px;
@@ -13,6 +17,10 @@
   display: none;
 
   @include media(desktop) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/banner/banner-bg-desk.png);
+    background-size: cover;
+
     max-width: 1440px;
   }
 }
@@ -53,6 +61,7 @@
 
   @include media(desktop) {
     flex-direction: row;
+    gap: 24px;
   }
 }
 

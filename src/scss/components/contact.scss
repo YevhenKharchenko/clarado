@@ -1,22 +1,18 @@
 .contact-section {
+  background: #ba4d00;
 }
 
 .contact-bg-wrapper {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 56px;
+  padding-bottom: 84px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/contact/contact-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 197px;
-    padding-bottom: 123px;
+    padding-top: 56px;
+    padding-bottom: 108px;
     max-width: 1440px;
-    background-image: url(../img/contact/contact-bg-desk.png);
   }
 }
 
@@ -24,17 +20,40 @@
 }
 
 .contact-title {
-  color: #000;
-  margin-bottom: 59px;
+}
+
+.contact-top-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
 
   @include media(desktop) {
-    margin-bottom: 54px;
+    font-size: 22px;
+    margin-bottom: 56px;
+  }
+}
+
+.contact-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    margin-bottom: 42px;
   }
 }
 
 .contact-link-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 
   @include media(desktop) {
     justify-content: center;
@@ -44,25 +63,14 @@
   }
 }
 
-.contact-email-link {
-  font-family: 'JetBrains Mono', sans-serif;
-  font-weight: 700;
+.contact-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 18px;
-  margin-bottom: 1em;
-  color: #000;
+  text-transform: uppercase;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 22px;
-  }
-}
-
-.contact-partnership-link {
-  font-family: 'JetBrains Mono', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #000;
-
-  @include media(desktop) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
