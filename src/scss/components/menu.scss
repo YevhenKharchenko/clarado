@@ -1,17 +1,24 @@
 .context-menu {
   display: none;
-  background: linear-gradient(180deg, #0b1027 0%, #f50 100%);
-  border-radius: 0 0 8px 8px;
-  padding: 34px 60px 54px 60px;
+  background: #151612;
+  border-bottom: 3px solid #ff6a00;
+  border-radius: 0 0 20px 20px;
+  padding: 36px 10px 64px 10px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  top: 56px;
+  top: 58px;
   left: 0;
   right: 0;
   transform: none;
   z-index: 10;
+}
+
+.context-nav {
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .context-nav-list {
@@ -22,26 +29,22 @@
 }
 
 .context-list-item {
-  padding: 12px 24px;
+  padding: 8px 24px;
 }
 
 .context-list-link {
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #fff;
-  border-radius: 8px;
-  font-family: 'Manrope', sans-serif;
+  padding: 8px 24px;
+  border: 1px solid #887159;
+  border-radius: 12px;
+  font-family: 'Roboto Mono', sans-serif;
   font-weight: 700;
   font-size: 14px;
-
-  color: #000;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 
   &:active {
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 23, 0.25);
-    background: #fff;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+    box-shadow: 0 4px 7px 0 rgba(255, 255, 255, 0.1);
+    background: rgba(255, 106, 0, 0.5);
   }
 }
 
